@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import Phrase from "./components/Phrase";
 
@@ -18,19 +18,28 @@ const Button = styled.button`
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
+  transition: background-size .8s ease; 
+
+  :hover {
+    cursor: pointer;
+    background-size: 400px;
+  }
 `;
 
 function App() {
-
+  // Phrases state
   const [phrase, savePhrase] = useState({});
 
   const consultAPI = async () => {
     const api = await fetch('https://breakingbadapi.com/api/quote/random');
     const phrase = await api.json();
-    // console.log(phrase[0]);
     savePhrase(phrase[0]);
   }
   
+  // Load phrase when page is ready
+  useEffect( () => {
+    consultAPI();
+  }, []);
 
   return (
     <Container>
