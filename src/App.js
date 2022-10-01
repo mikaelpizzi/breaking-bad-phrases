@@ -20,9 +20,17 @@ const Button = styled.button`
 `;
 
 function App() {
+
+  const consultAPI = () => {
+    console.log("Consulting...");
+  }
+  
+
   return (
     <Container>
-      <Button>
+      <Button
+        onClick={consultAPI}
+      >
         Get Phrase
       </Button>
     </Container>
