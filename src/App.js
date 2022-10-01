@@ -21,8 +21,10 @@ const Button = styled.button`
 
 function App() {
 
-  const consultAPI = () => {
-    console.log("Consulting...");
+  const consultAPI = async () => {
+    const api = await fetch('https://breakingbadapi.com/api/quote/random');
+    const phrase = await api.json();
+    console.log(phrase[0]);
   }
   
 
