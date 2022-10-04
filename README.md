@@ -1,3 +1,10 @@
+# Breaking Bad Phrases
+
+A simple web page using Breaking Bad API
+
+Do you want to take a look at the already deployed application?
+[**Try app**](https://patient-manager-mikaelpizzi.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,6 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install all the dependencies for the project.
 
 ### `npm start`
 
