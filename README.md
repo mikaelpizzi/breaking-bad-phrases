@@ -3,7 +3,7 @@
 A simple web page using Breaking Bad API
 
 Do you want to take a look at the already deployed application?
-[**Try app**](https://mikaelpizzi-breakingbad-phrases.netlify.app/)
+[**Try app**](https://mikaelpizzi-breakingbad-phrases.netlify.app/) 
 
 # Getting Started with Create React App
 
